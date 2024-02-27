@@ -33,10 +33,9 @@ function Post() {
         <div className="form_image">
             <h2>画像</h2>
             {/*ボタンを押したら画像のアップロードができる*/}
-            <Button className="postBox_addImage"><AddPhotoAlternateIcon/></Button>
             {/*postBox_addImageができたら以下のinputは消す*/}
             <ImageUpload/>
-            <input className="imageInput" placeholder="画像"></input>
+            {/*<input className="imageInput" placeholder="画像"></input>*/}
         </div>
         
       </form>
@@ -47,6 +46,7 @@ function Post() {
       <p>モデルコースを追加</p>
       </div>
       <Button variant="outlined" className="postBox_postButton" type="submit">投稿</Button>
+      {/*自動で全体閲覧画面(トップ画)に飛ぶ)*/}
       
       
     </div>
